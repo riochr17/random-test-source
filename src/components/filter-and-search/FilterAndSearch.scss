@@ -1,0 +1,48 @@
+.filter-and-search {
+    padding: 16px 24px;
+    background: #1255BC;
+    $middle-gap: 20px;
+    &--search {
+        width: 50%;
+        &--container {
+            width: 100%;
+            display: inline-block;
+            padding-right: $middle-gap / 2;
+        }
+        input {
+            box-sizing: content-box;
+            width: 100%;
+            font-size: 1em;
+            font-weight: bold;
+            padding: 6px 0;
+            outline: none;
+            background: none;
+            border: none;
+            border-bottom: solid 1px white;
+            color: white;
+            &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: white;
+                opacity: 1; /* Firefox */
+            }
+            &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                color: white;
+            }
+            &::-ms-input-placeholder { /* Microsoft Edge */
+                color: white;
+            }
+        }
+    }
+    &--filter {
+        margin-top: 12px;
+        &--container {
+            display: inline-block;
+            width: 50%;
+        }
+        &--furniture-style {
+            margin-right: $middle-gap / 2;
+        }
+        &--delivery-time {
+            margin-left: $middle-gap / 2;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.product-item {
+    width: 50%;
+    display: inline-block;   
+    &--container {
+        margin: 8px 12px;
+        padding: 16px 18px;
+        box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, .2);
+        border-radius: 5px;
+    }
+    &--top {
+        &--name {
+            font-weight: bold;
+            font-size: 1.15em;
+        }
+        &--price {
+            font-weight: bold;
+            color: #FE9221;
+            float: right;
+        }
+    }
+    &--middle {
+        margin-top: 10px;
+        &--description {
+            // 
+        }
+        &--style {
+            margin-top: 10px;
+            color: rgb(42, 107, 206);
+        }
+    }
+    &--bottom {
+        margin-top: 10px;
+        &--delivery-days {
+            text-align: right;
+            color: #1255BC;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    }
+}
